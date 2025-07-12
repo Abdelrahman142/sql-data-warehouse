@@ -1,3 +1,19 @@
+/*# Bronze Layer ETL Load Instructions
+
+This procedure loads raw CSV data from the local filesystem into the `bronze` schema of the `Datawarehouse` database.
+
+## 📦 Prerequisites
+
+- SQL Server installed and running.
+- `Datawarehouse` database exists.
+- `bronze` schema exists inside `Datawarehouse`.
+- Tables must be already created (run the table creation script first).
+- Dataset `.csv` files must be present in the correct local path.
+
+## 📁 File Paths Expected
+
+The following CSV files must be located as follows:
+*/
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
     DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME , @batch_end_time DATETIME;
