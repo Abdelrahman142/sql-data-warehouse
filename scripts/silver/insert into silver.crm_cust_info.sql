@@ -4,8 +4,9 @@ insert into silver.crm_cust_info(
  cst_key,
  cst_firstname,
  cst_lastname,
- cst_marital_status,
  cst_gndr,
+ cst_marital_status,
+
  cst_create_date
 )
 
